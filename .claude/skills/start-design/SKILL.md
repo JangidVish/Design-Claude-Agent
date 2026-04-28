@@ -159,9 +159,51 @@ If a link fails to load → note it as "Could not access — [URL]" and move on.
 
 ---
 
+## STEP 4.5 — Check if you have enough data
+
+After scraping all links, assess what you collected:
+
+**If you have LESS than 3 of these 5 data points:**
+1. Brand color palette (with hex codes or clear color descriptions)
+2. Typography / font style
+3. Overall visual aesthetic
+4. Post style from Instagram
+5. Brand voice / tone
+
+**Or if ALL links failed to load / returned no useful content:**
+
+Ask:
+> "I wasn't able to gather enough visual data from the links to build strong brand guidelines. 🙏
+>
+> To make sure the design guidelines are accurate to the client's brand, could you help me with any of these?
+>
+> - 📸 **Screenshot of their Instagram feed** (3–6 posts visible) — paste or upload here
+> - 🌐 **Screenshot of their website homepage** — especially the hero section
+> - 🎨 **Any brand materials** they've shared: logo file, brand kit, brochure, etc.
+> - 📱 **Screenshot of a Facebook post** they liked or made
+>
+> Just drop the images here — the more you share, the better the guidelines will be.
+> (Even 1 screenshot is better than nothing!)"
+
+Wait for their response.
+
+**If they share images:**
+- Carefully analyze each image for: colors, fonts, layout style, mood, visual elements, tone
+- Note any patterns across multiple images (consistent color use, recurring icons, typography choices)
+- Use these observations to fill in the gaps in the guidelines
+
+**If they can't share any images:**
+- Say: "No problem — I'll build the best guidelines I can from what's available, and we can refine them with `/review-design` after the first round of feedback."
+- Proceed with whatever data you have
+
+**If you have ENOUGH data (3 or more data points collected):**
+- Proceed directly to STEP 5 without asking for images
+
+---
+
 ## STEP 5 — Generate design_guidelines.md
 
-Using everything scraped, write `design_guidelines.md` in the current directory:
+Using everything scraped (and any images provided in Step 4.5), write `design_guidelines.md` in the current directory:
 
 ```markdown
 # Brand Guidelines — [Brand Name]

@@ -20,7 +20,8 @@ Every client folder will look like this once initialized:
 │       ├── generate/SKILL.md
 │       └── review-design/SKILL.md
 ├── tasks.md                         ← parsed from Excel/Google Sheet
-└── design_guidelines.md             ← auto-generated from client links
+├── design_guidelines.md             ← auto-generated from client links
+└── reel[N].md                       ← step-by-step Canva guide (created per Reel post)
 ```
 
 ---
@@ -35,14 +36,15 @@ Every client folder will look like this once initialized:
 
 3. **Always read both `tasks.md` and `design_guidelines.md`** before generating any prompt.
 
-4. **Prompts are always DALL-E optimized** — structured, detailed, visual, no abstract concepts.
+4. **Always clarify ambiguous post types before generating.** If Type is unclear → ask Post/Carousel/Reel. If Carousel → ask slide count (or suggest). If Reel → ask duration (or suggest).
 
-5. **Be conversational but efficient.** Ask one thing at a time. Don't dump all questions at once.
+5. **Generate complete posts, not just backgrounds.** Every output includes: DALL-E background prompt + exact text layers (headline, body, CTA) + overlay/element specs + Canva step-by-step layout guide.
 
-6. **When generating prompts**, always show:
-   - The post details (type, topic, caption summary)
-   - The full DALL-E prompt
-   - A short note on what brand elements you applied
+6. **Reels get their own file.** Every Reel generates a `reel[N].md` — a full Canva Free production guide with scene breakdown, animations, audio tips, and export checklist. This file is for interns with zero design experience.
+
+7. **If brand data is thin, ask for images.** When scraping links yields less than 3 useful data points, ask the user to share screenshots (Instagram feed, website, brand materials) before writing `design_guidelines.md`.
+
+8. **Be conversational but efficient.** Ask one thing at a time. Don't dump all questions at once.
 
 ---
 
